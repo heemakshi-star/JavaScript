@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Check for Prime Number</title>
+    <style>
+        body {
+            background-color: lightcyan;
+            color: blue;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        h1 {
+            font-size: 50px;
+        }
+
+        form {
+            font-family: Times New Roman;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<script>
+    function prime() {
+        var num, x, flag = true;
+
+        num = document.myform.num.value;
+        num = parseInt(num)
+
+        for (x = 2; x <= num - 1; x++) {
+            if (num % x == 0) {
+                flag = false;
+                break;
+            }
+        }
+
+        if (flag == true) {
+            alert(num + " is a Prime Number!!");
+        }
+        else {
+            alert(num + " is Not a Prime Number!!");
+        }
+    }
+</script>
+
+<body>
+    <center>
+        <h1><b>Enter a Number and Check if it is<br>Prime or not</b></h1><br><br>
+
+        <form name="myform">
+            Enter the Number: <input type="text" name="num" value="">
+            <br><br>
+            <input type="Submit" value="Check For Prime" onclick="prime()">
+            <br>
+        </form>
+    </center>
+</body>
+
+</html>
