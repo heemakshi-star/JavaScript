@@ -1,0 +1,79 @@
+<html>
+
+<head>
+    <title>JavaScript Form</title>
+
+    <style>
+        body {
+            background-color: #1be27e;
+            color: #000000;
+            font-family: Times New Roman;
+        }
+
+        form {
+            background-color: #1be27e;
+            color: #000000;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        h1 {
+            text-decoration: bold;
+        }
+    </style>
+</head>
+
+<script>
+    function validateform() {
+        var name = document.forms["myform"]["name"].value;
+        var pass = document.forms["myform"]["pass"].value;
+        var repass = document.forms["myform"]["repass"].value;
+        var mobile = document.forms["myform"]["mobile"].value;
+
+        if (name == "" || name == null) {
+            alert("Name Field can not be empty!!");
+            return false;
+        }
+        else if (pass.length <= 0) {
+            alert("Password is Mandatory!!");
+            return false;
+        }
+        else if (pass.length < 8) {
+            alert("Password must be  ateast 8 Characters Long!!");
+            return false;
+        }
+        else if (repass.length <= 0) {
+            alert("Re-Type Passwod");
+            return false;
+        }
+        else if (repass != pass) {
+            alert("Re-Typed Password must be same as above!!");
+            return false;
+        }
+        else if (mobile.length <= 0) {
+            alert("Enter Mobile Number!!")
+            return false;
+        }
+        else if (mobile.length != 10) {
+            alert("Entered Mobile Number should be 10 Digit Long!!");
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+</script>
+
+<body>
+    <center>
+        <h1>REGISTRATION FORM</h1>
+        <form name="myform" method="Post" onsubmit="return validateform()" action="TY.html">
+            Name: <input type="text" id="name"><br><br>
+            Password: <input type="password" id="pass"><br><br>
+            Re-Type Password: <input type="password" id="repass"><br><br>
+            Mobile: <input type="number" id="mobile"><br><br>
+            <br><input type="Submit" value="Submit">
+        </form>
+    </center>
+</body>
+
+</html>
