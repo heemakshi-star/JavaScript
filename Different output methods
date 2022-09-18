@@ -1,0 +1,57 @@
+//Using Console method in Inspect element
+In console window write
+Alert(“Name: Heemakshi Sharma\nEnrollment No.: A50105220050”)
+
+//Using JavaScript Code
+<! Doctype html>
+     <html>
+           <head>
+                 <title>
+                          Alert Message
+                  </title>
+                       <script>
+                          Alert(“Name: Heemakshi Sharma\nEnrollment No.: A50105220050”)
+                       </script>
+           </head>
+     </html>
+
+//Using console.log, document.write method.
+<html>
+     <head>
+             <title>
+                   Output Methods
+             </title>
+                   <script>
+                         var a = 10;
+                         console.log(a);
+                         alert(a);
+                         document.write(a);
+                <body>
+                         <p> Console.log() method </p>
+                </body>
+                              </script>
+     </head>
+</html>
+
+//Using getElementById method
+           <!doctype html>
+                        <html>
+                               <head>
+                                     <title>
+                                       Output Methods
+                                     </title>
+                                           <body>
+                                                  <p>console.log() method </p>
+                                                  <p id= "result"></p>
+                                                <script>
+                                                       var a=10;
+                                                        var b=20;
+                                                        var sum=a+b;
+                                                        document.getElementById("result").innerHTML=sum;
+                                                  </script>
+                                              </body>
+                                      </head>
+                               </html>
+                               
+
+
