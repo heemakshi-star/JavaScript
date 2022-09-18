@@ -1,0 +1,124 @@
+//Arithmetic Operators
+<!doctype html>
+<html>
+    <head>
+        <title>
+            Arithmetic Operators
+        </title>
+    </head>
+    <body>
+        <h1> Arithmetic Operators</h1>
+        <script>
+            var a=7, b=3;
+            var add, subtract, product, divide, modulus;
+            
+            add = a+b;
+            subtract = a-b;
+            product = a*b;
+            divide = a/b;
+            modulus = a%b;
+            
+            document.write("Sum of 7 and 3 is = "+ add +" <br/>");
+            document.write("Subtraction of 7 and 3 is = "+ subtract +" <br/>");
+            document.write("Product of 7 and 3 is = "+ product +" <br/>");
+            document.write("Division of 7 and 3 is = "+ divide +" <br/>");
+            document.write("Remainder of 7 and 3 is = "+ modulus +" <br/>");
+        </script>
+    </body>
+</html>
+                               
+//Logical Operators
+<!doctype html>
+<html>
+    <head>
+        <title>
+            Logical Operators
+        </title>
+    </head>
+    <body>
+        <h1> Logical Operators</h1>
+        
+        <p id = "p1"></p>
+        <p id = "p2"></p>
+        <p id = "p3"></p>
+        <p id = "p4"></p>
+        <p id = "p5"></p>
+
+        <script>
+            var a=5, b=10;
+            
+            document.getElementById("p1").innerHTML = (a != b) && (a < b);
+            document.getElementById("p2").innerHTML = (a > b) || (a == b);
+            document.getElementById("p3").innerHTML = (a < b) || (a == b);
+            document.getElementById("p4").innerHTML = !(a < b);
+            document.getElementById("p5").innerHTML = !(a > b);
+
+        </script>
+    </body>
+</html>
+                      
+//Assignment Operators
+<! doctype html>
+<html>
+    <head>
+        <title> Assignment Operators </title>
+    </head>
+    <body>
+        <h1>Assignment Operators</h1>
+        <script>
+            var a = 7, b = 9;
+
+            document.write("Value of b = "+ (b += a) + "<br/>");
+            document.write("Value of b = "+ (b -= a) + "<br/>");
+            document.write("Value of b = "+ (b *= a) + "<br/>");
+            document.write("Value of b = "+ (b /= a) + "<br/>");
+            document.write("Value of b = "+ (b %= a) + "<br/>");
+
+        </script>
+    </body>
+</html>
+                            
+//Comparison Operators
+<! doctype html>
+<html>
+    <head>
+        <title>
+            Comparison Operators
+        </title>
+    </head>
+    <body>
+        <h1>Comparison Operators</h1>
+        <script>
+            var a = 17, b = 12;
+document.write("Result of " + a + " Greater than" + b + " is = " + (a >b) + "<br/>");                       
+document.write("Result of " + a + " Greater than or equal to" + b + " is = " + (a >= b) + "<br/>");
+document.write("Result of " + a + " Less than" + b + " is = " + (a < b) + "<br/>");            
+document.write("Result of " + a + " Less than or equal to" + b + " is = " + (a <= b) + "<br/>");
+document.write("Result of " + a + " Equal to" + b + " is = " + (a == b) + "<br/>");
+document.write("Result of " + a + " Not equal to" + b + " is = " + (a != b) + "<br/>");
+        </script>
+    </body>
+</html>
+                         
+//Bitwise Operators
+<!doctype html>
+<html>
+    <head>
+        <title>Bitwise Operators</title>
+    </head>
+    <body>
+        <h1>Bitwise Operators</h1>
+        <script>
+            var a = 9, b = 15;
+            
+            document.write ("Bitwise AND Operator = " + (a&b));
+            document.write ("<br\> Bitwise OR Operator = " + (a|b));
+            document.write ("<br\> Bitwise Exclusive OR Operator = " + (a^b));
+            document.write ("<br\> Bitwise NOT Operator = " + (~b));
+            document.write ("<br\> Left Shift Operator = " + (a << 1));
+            document.write ("<br\> Right Shift Operator = " + (b >> 1));
+
+        </script>
+    </body>
+</html>
+
